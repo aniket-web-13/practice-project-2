@@ -1,0 +1,184 @@
+let testimonial = [
+  {
+    src: "./assets/jpg/David-martinez.jpg",
+    heading:
+      "Their attention to detail market expertise made all the difference.",
+    para: "Their  evident throughout. I highly recommend their services to anyone looking to buy or sell. I’m thrilled with my new investment this new property!",
+    ownerName: "David Martinez",
+    add: "San Jose, South Dakota",
+  },
+  {
+    src: "./assets/jpg/James-thompson.jpg",
+    heading: "An exceptional experience from start to finish!",
+    para: "From the first meeting to the closing, knowledgeable, and always available to answer our questions. I couldn’t be happier with my new home! They listened to what I was looking for and showed me properties needs perfectly.",
+    ownerName: "James Thompson",
+    add: "Dallas, Texas",
+  },
+  {
+    src: "./assets/jpg/Olivia-carter.jpg",
+    heading: "Exceptional service and outstanding results.",
+    para: "The team’s my expectations. I couldn’t be more pleased with the outcome. I never felt rushed or pressured, and they were always willing to go the extra mile to find properties that matched my vision",
+    ownerName: "Olivia Carter",
+    add: "Boston, Florida",
+  },
+];
+
+let homeOwnerbox = document.getElementById("testimonialMainBox");
+
+for (let i = 0; i < testimonial.length; i++) {
+  const element = testimonial[i];
+
+  let testimonialCard = document.createElement("div");
+  testimonialCard.classList.add("testimonial-card");
+  homeOwnerbox.appendChild(testimonialCard);
+ 
+
+  testimonialCard.innerHTML = `
+    
+     <div class="test-in-info">
+        <div class="test-l-info">
+            <div class="tl-info-top">
+                <h2>${element.heading}</h2>
+                <p>${element.para}</p>
+            </div> 
+            <div class="tl-info-bottom">
+                <h3>${element.ownerName}</h3>
+                <p>${element.add}</p>
+            </div>                                  
+        </div>
+        <div class="test-r-img">
+            <img src="${element.src}" alt="">
+        </div>
+    </div>                       
+        
+    `
+}
+
+// let j = testimonial.length;
+// let n = 0;
+
+// let testCard = document.getElementsByClassName("testimonial-card");
+// console.log(testCard);
+
+
+// let prevBtn = document.getElementById("back-test-btn");
+// let nextBtn = document.getElementById("next-test-btn");
+
+
+// nextBtn.addEventListener("click", () => {
+//   n = (j + n + 1) % j;
+//   displayTestimonial();
+// });
+// console.log(nextBtn);
+
+// prevBtn.addEventListener("click", () => {
+//   n = (j + n - 1) % j;
+//   displayTestimonial();
+// });
+// console.log(prevBtn);
+
+
+/*
+let homeOwnerbox = document.getElementById("testimonialMainBox");
+
+for (let i = 0; i < testimonial.length; i++) {
+  const element = testimonial[i];
+
+  let testimonialCard = document.createElement("div");
+  testimonialCard.classList.add("testimonial-card");
+  homeOwnerbox.appendChild(testimonialCard);
+
+  testimonialCard.innerHTML = `
+    <div class="test-in-info">
+      <div class="test-l-info">
+        <div class="tl-info-top">
+          <h2>${element.heading}</h2>
+          <p>${element.para}</p>
+        </div> 
+        <div class="tl-info-bottom">
+          <h3>${element.ownerName}</h3>
+          <p>${element.add}</p>
+        </div>                                  
+      </div>
+      <div class="test-r-img">
+        <img src="${element.src}" alt="">
+      </div>
+    </div>
+  `;
+}
+
+let j = 0;
+let testCard = document.getElementsByClassName("testimonial-card");
+
+
+for (let i = 0; i < testCard.length; i++) {
+  testCard[i].style.diaplay = "none";  
+}
+
+function displayTestimonial() {
+  for (let i = 0; i < testCard.length; i++) {
+    testCard[i].style.diaplay = "none";
+  }
+
+
+  testCard[j].style.display = "block";
+}
+
+let prevBtn = document.getElementById("back-test-btn");
+let nextBtn = document.getElementById("next-test-btn");
+
+nextBtn.addEventListener("click", () => {
+  n = (j + n + 1) % j;
+  displayTestimonial();
+});
+console.log(nextBtn);
+
+prevBtn.addEventListener("click", () => {
+  n = (j + n - 1) % j;
+  displayTestimonial();
+});
+console.log(prevBtn);*/
+
+
+let j = 0;
+let testCard = document.getElementsByClassName("testimonial-card");
+
+
+for (let i = 0; i < testCard.length; i++) {
+  testCard[i].style.display = "none";
+}
+
+
+function displayTestimonial() {
+  for (let i = 0; i < testCard.length; i++) {
+    testCard[i].style.display = "none"; 
+  }
+
+  testCard[j].style.display = "block";
+}
+
+if (testCard.length > 0) {
+  displayTestimonial();
+}
+
+let prevBtn = document.getElementById("back-test-btn");
+let nextBtn = document.getElementById("next-test-btn");
+
+
+nextBtn.addEventListener("click", () => {
+  j = (j + 1) % testCard.length; 
+  displayTestimonial();
+});
+
+
+
+prevBtn.addEventListener("click", () => {
+  j = (j - 1 + testCard.length) % testCard.length; 
+  displayTestimonial();
+});
+
+
+
+
+
+

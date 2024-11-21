@@ -1,0 +1,18 @@
+:root{
+  --black-color:#0C0407;
+  --navLink-color:#23201E;
+  --subHead-color:#F7F7F7;
+  --white-color:#FFFFFF;
+  --smallCont-color:#333333;
+  --border-color:#E8E8E8;
+  --btn-color:#CCCCCC;
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+

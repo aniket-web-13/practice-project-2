@@ -1,0 +1,734 @@
+// Home page section Recent Properties //
+
+.rp-heading {
+  width: 100%;
+}
+
+.rp-title-box {
+  width: 100%;
+  @include flex(column, center, center);
+  row-gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+// countainer for cards //
+.rp-card-count {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 373px 373px 373px;
+  grid-template-rows: 411px;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+
+.rp-card {
+  width: 373px;
+  height: 411px;
+  // border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+}
+
+.card-top {
+  width: 100%;
+  @include flex(row, center, center);
+  position: relative;
+}
+
+.card-top img {
+  width: 100%;
+  border-radius: 1.25rem;
+}
+
+.card-top .card-req {
+  width: 90%;
+  position: absolute;
+  top: 1rem;
+  @include flex(row, start, space-between);
+}
+
+.rp-card .card-body {
+  padding: 0.3rem;
+  width: 100%;
+  height: 25%;
+  @include flex(row, start, space-between);
+}
+
+.card-body .card-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.card-body .card-add {
+  @include flex(row, center, flex-start);
+  column-gap: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  address {
+    font-style: normal;
+  }
+}
+
+.card-body .card-btm {
+  width: 100%;
+  // margin-bottom: 0.5rem;
+  @include flex(row, center, space-between);
+}
+
+.card-body .card-btm .card-btm-info {
+  width: 25%;
+  // padding: 0.4rem 0.8rem;
+}
+
+.card-body .card-btm .card-btm-info .cb-prop-info {
+  width: 90%;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid var(--border-color);
+  border-radius: 0.2rem;
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.card-rm {
+  padding: 0.4rem 1rem;
+  background-color: var(--subHead-color);
+  border: 1px solid var(--border-color);
+  color: var(--navLink-color);
+  border-radius: 1rem;
+  column-gap: 1rem;
+  @include flex(row, center, center);
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.rp-btm {
+  width: 100%;
+  margin-top: 3rem;
+  @include flex(row, center, center);
+}
+
+// section page 2 aboute us in home page //
+
+.padding-section {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.about-info {
+  width: 100%;
+  @include flex(row, normal, space-between);
+}
+
+.about-left-count {
+  width: 45%;
+  @include flex(column, normal, normal);
+  gap: 1.5rem;
+}
+
+.abt-title {
+  width: fit-content;
+}
+
+.abt-text {
+  @include flex(column, normal, normal);
+  gap: 5rem;
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--smallCont-color);
+  }
+}
+
+.about-right-count {
+  width: 45%;
+}
+
+.about-right-count .r-in-img {
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+}
+
+// section page 3 Property Categories //
+
+.cat-count {
+  width: 100%;
+  @include flex(column, center, space-between);
+  gap: 2rem;
+}
+
+.p-cat-heading {
+  width: 43%;
+  text-align: center;
+}
+
+.p-cat-card-count {
+  width: 100%;
+  @include flex(row, center, space-between);
+}
+
+.prop-cat-card {
+  width: 32%;
+}
+
+.pc-card-img {
+  width: 100%;
+
+  img {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+}
+
+.pc-card-tbody {
+  width: 100%;
+  padding: 0.2rem;
+  @include flex(column, normal, space-between);
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--smallCont-color);
+    margin-bottom: 1rem;
+  }
+
+  a {
+    width: fit-content;
+  }
+}
+
+.pcat-sub-head {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.p-cat-btn {
+  padding: 0.8rem 1rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--black-color);
+  border: 1px solid var(--border-color);
+  background-color: var(--white-color);
+}
+
+// section 4 best in Real Estate //
+// all in section 4 best in Real Estate use home page section 2 about section css //
+.bre-h2 {
+  width: 85%;
+}
+
+// section 5 Numbers of success //
+
+.number-sec-main-count {
+  width: 100%;
+  @include flex(row, normal, space-between);
+}
+
+.nsec-left-box {
+  width: 41%;
+}
+
+.ns-left-count {
+  width: 100%;
+  @include flex(column, normal, normal);
+  gap: 1rem;
+}
+
+.ns-title {
+  width: fit-content;
+}
+
+.ns-text {
+  @include flex(column, normal, normal);
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--smallCont-color);
+  }
+}
+
+.nsec-ridht-box {
+  width: 47%;
+  display: grid;
+  grid-template-columns: 270px 270px;
+  grid-template-rows: 254px;
+  justify-content: space-between;
+  row-gap: 1.5rem;
+}
+
+.ns-card {
+  width: 270px;
+  height: 254px;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1.2rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--subHead-color);
+  @include flex(column, normal, space-between);
+}
+
+.ns-num-text {
+  @include flex(column, normal, space-between);
+  row-gap: 1rem;
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: var(--smallCont-color);
+  }
+}
+
+.ns-info-text {
+  text-wrap: wrap;
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--smallCont-color);
+  }
+}
+
+// section 6 Our Process //
+
+.our-process-main-cout {
+  width: 100%;
+  @include flex(column, center, space-between);
+  gap: 1rem;
+  // position: relative;
+}
+
+.our-p-heading {
+  width: 45%;
+  text-align: center;
+}
+
+.op-top-count {
+  width: 100%;
+  @include flex(column, center, space-between);
+  gap: 1rem;
+}
+
+.op-btm-count {
+  width: 100%;
+  @include flex(row, start, space-between);
+}
+
+.op-info-left {
+  width: 41%;
+  // height: 100%;
+}
+
+.op-img-right {
+  width: 45%;
+  height: 1620px;
+}
+
+.op-info-count {
+  width: 100%;
+  padding-top: 2.5rem;
+}
+
+.op-step {
+  width: 100%;
+  height: 500px;
+  // @include flex(column, start, start);
+  row-gap: 1rem;
+}
+
+.op-step .op-s-pad {
+  // padding-bottom: 6rem;
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--smallCont-color);
+  }
+}
+
+.steps-in-box {
+  width: 100%;
+  @include flex(column, start, start);
+  row-gap: 1rem;
+}
+
+.op-img-count {
+  // @include flex(column, end, space-around);
+  position: sticky !important;
+  top: 20px;
+}
+
+.op-step-img {
+  width: 540px;
+  height: 450px;
+  position: absolute;
+  top: 0;
+
+  img {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+}
+
+.op-img-1 {
+  z-index: 1;
+}
+
+.op-img-2 {
+  z-index: 2;
+  // opacity: ;
+}
+
+.op-img-3 {
+  z-index: 3;
+  //  opacity: ;
+}
+
+// section 7 agents //
+.agents-p-head {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.main-agent-box {
+  width: 100%;
+  height: 500px;
+}
+
+.agents-container {
+  width: 100%;
+  height: 500px;
+  position: relative !important;
+  // position: absolute;
+  // left: 100%;
+  // animation-name: scrollLeft;
+  // animation-duration: 20s;
+  // animation-timing-function: linear;
+  // animation-iteration-count: infinite;
+}
+// scroll animation use for agents card to move //
+
+@keyframes scrollLeft {
+  to {
+    left: -340px;
+  }
+}
+
+.agent-card {
+  width: 340px;
+  height: 500px;
+  @include flex(column, start, center);
+  position: absolute;
+  left: 175%;
+  top: 0;
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  a {
+    // display: block;
+    img {
+      width: 340px;
+      height: auto;
+      border-radius: 1rem;
+      // aspect-ratio: 4/5;
+    }
+  }
+}
+
+.agent-info {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+
+  a {
+    text-decoration: none;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: var(--smallCont-color);
+  }
+}
+
+.agc0 {
+  animation-delay: calc(30s / 10 * (10 - 1) * -1);
+}
+
+.agc1 {
+  animation-delay: calc(30s / 10 * (10 - 2) * -1);
+}
+
+.agc2 {
+  animation-delay: calc(30s / 10 * (10 - 3) * -1);
+}
+
+.agc3 {
+  animation-delay: calc(30s / 10 * (10 - 4) * -1);
+}
+
+.agc4 {
+  animation-delay: calc(30s / 10 * (10 - 5) * -1);
+}
+
+.agc5 {
+  animation-delay: calc(30s / 10 * (10 - 6) * -1);
+}
+
+.agc6 {
+  animation-delay: calc(30s / 10 * (10 - 7) * -1);
+}
+
+.agc7 {
+  animation-delay: calc(30s / 10 * (10 - 8) * -1);
+}
+
+.agc8 {
+  animation-delay: calc(30s / 10 * (10 - 9) * -1);
+}
+
+.agc9 {
+  animation-delay: calc(30s / 10 * (10 - 10) * -1);
+}
+
+// section 8 tesimonial //
+
+.testmo-count {
+  width: 100%;
+  @include flex(column, center, center);
+}
+
+.home-owner-box {
+  // width: 100%;
+  padding: 3rem 0;
+  @include flex(row, center, center);
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  text-wrap: wrap;
+  gap: 3rem;
+}
+
+.home-card-btn {
+  width: 100%;
+  // padding: 0.5rem;
+  @include flex(row, center, center);
+}
+.ho-btn {
+  padding: 0.7rem 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--btn-color);
+  color: var(--btn-color);
+  background-color: var(--white-color);
+  &:hover {
+    color: var(--white-color);
+    border: 1px solid var(--black-color);
+    background-color: var(--black-color);
+  }
+}
+.testimonial-card {
+  width: 821px;
+  height: 338px;
+  border: 1px solid var(--btn-color);
+  border-radius: 1.5rem;
+  padding: 3.75rem 3.75rem 2.5rem;
+  box-shadow: 0 32px 96px -28px #0000001f;
+}
+
+.btn-sec {
+  width: 15%;
+  @include flex(row, center, center);
+  gap: 1rem;
+}
+
+.test-in-info {
+  width: 100%;
+  height: 100%;
+  @include flex(row, start, space-between);
+}
+.test-l-info {
+  width: 62%;
+  height: 100%;
+  @include flex(column, start, space-between);
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+.test-r-img {
+  width: 25%;
+  img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
+
+.card-show {
+  background-color: #0000;
+  width: 100%;
+  max-width: 821px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 88px;
+}
+
+// section 9 blogs and articles //
+
+.article-main-box {
+  width: 100%;
+  @include flex(column, center, center);
+}
+.article-top-box {
+  width: 100%;
+  @include flex(row, center, space-between);
+}
+.article-btm-box {
+  width: 100%;
+  @include flex(row, center, space-between);
+}
+.a-top-left {
+  width: 85%;
+  @include flex(column, start, start);
+}
+.a-top-right {
+  width: 13%;
+  // @include flex(row, center, space-between)
+}
+.arti-head {
+  width: 100%;
+  margin-bottom: 2rem;
+  @include flex(column, start, start);
+  gap: 1rem;
+}
+.arti-heading {
+  // width: 50%;
+  text-align: left;
+}
+.article-card {
+  width: 30%;
+  @include flex(column, start, center);
+}
+.artcle-img {
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 1.2rem;
+  }
+}
+.article-body {
+  width: 100%;
+  @include flex(column, start, center);
+  gap: 0.8rem;
+  .art-a {
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .art-b-dt {
+    width: 70%;
+    @include flex(row, center, space-between);
+
+    .art-da {
+      width: 53%;
+      @include flex(row, center, space-between);
+    }
+    .art-ta {
+      width: 40%;
+      @include flex(row, center, space-between);
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      color: var(--smallCont-color);
+    }
+  }
+}
+
+// section 10 FAQ //
+
+.faq-main-count {
+  width: 100%;
+  @include flex(row, start, space-between);
+
+}
+.faq-left {
+  width: 35%;
+  // height: 80vh;
+  
+}
+.faq-heading {
+  width: 100%;
+  height: fit-content;
+  @include flex(column, start, space-between);
+  gap: 1rem;
+}
+.faq-right{
+  width: 60%;
+}
+.question-count{
+  width: 100%;
+  @include flex(column, center, space-between);
+  gap: 1rem;
+}
+
+.faq-quest{
+  width: 99%;
+  padding: 1.5rem;
+  background-color: var(--subHead-color);
+  border-radius: 1.25rem;
+  border: 1px solid var(--border-color);
+  @include flex(column, start, space-between);
+  // gap: ;
+}
+.faq-q-top{
+  width: 100%;
+  @include flex(row, center, space-between);
+  cursor: pointer;
+  h2{
+    font-size: 1.5rem;
+  }
+}
+.faq-icon{
+  width: 10%;
+  @include flex(row, center, center);
+  font-size: 1.25rem;
+  font-weight: 100;
+  
+}
+
+.faq-bottom{
+  width: 82%;
+  margin-top: 1rem;
+  p{
+    font-size: 1rem;
+    color: var(--smallCont-color);
+  }
+}

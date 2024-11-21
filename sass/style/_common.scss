@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+
+main{
+    overflow-x: hidden
+}
+
+.container{
+    @include flex(row , center , center);
+    width: 64%;    
+    margin-right: auto;
+    margin-left: auto;       
+}
+
+.section-spacing{
+    padding: 0 1.25rem;
+}
+
+.b{
+    border: 1px solid black;
+}

@@ -1,0 +1,35 @@
+.nav-section {
+  z-index: 99;
+  padding: 2rem 0.5rem;
+  position: relative;
+}
+
+.nav-layout {
+  width: 100%;
+  margin-bottom: 3rem;
+  @include flex(row, center, space-between);
+}
+
+.nav-left {
+  @include flex(row, center, center);
+}
+.nav-middle {
+  width: 50%;
+}
+
+.nav-middle ul {
+  display: grid;
+  grid-template-columns: 110px 110px 110px 110px 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-middle ul li {
+  list-style: none;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: var(--navLink-color);
+  }
+}
