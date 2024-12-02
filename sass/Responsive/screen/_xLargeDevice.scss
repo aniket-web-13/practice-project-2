@@ -1,0 +1,89 @@
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .container {
+    width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .padding-section {
+    padding: 3.5rem 0 !important;
+  }
+  // navigation //
+  .nav-section {
+    padding: 1.25rem 1.25rem !important;
+  }
+  .hamSec {
+    display: none;
+  }
+  // header //
+  .head-h1 {
+    h1 {
+      font-size: 13vw !important;
+    }
+  }
+  .hero-img img {
+    width: 100%;
+  }
+  // recent property //
+  .rp-card {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .rp-card-count {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+  .cb-prop-info{
+    p{
+      font-size: 0.75rem !important;
+    }
+  }
+  // number of success //
+  .nsec-right-box {
+    width: 58%;
+  }
+  .our-p-heading {
+    width: 51%;
+  }
+  .ns-left-postion {
+    width: 30%;
+    height: 62%;
+  }
+  // our process //
+  .op-img-right {
+    width: 54%;
+    height: 1500px;
+  }
+  .op-step-img {
+    width: 491px;
+    height: auto;
+  }
+  .op-info-left {
+    width: 45%;
+  }
+  .op-img-right {
+    width: 50%;
+  }
+  .op-img-position {
+    width: auto;
+  }
+  // our agent //
+  .agent-card {
+    left: 3400px;
+  }
+// blog and article //
+.art-b-dt {
+  width: 85% !important;
+}
+  // FAQ //
+  .faq-left {
+    width: 32%;
+  }
+  .faq-right {
+    width: 67%;
+  }
+  // footer //
+  input , .foot-name ,.foot-email, .ftf-form {
+    width: 100% !important;
+}
+
+}

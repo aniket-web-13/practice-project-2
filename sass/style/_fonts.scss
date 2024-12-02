@@ -1,20 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-body{
-    font-family: "Inter", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
 }
-h1{
-    font-size: 9vw;
-    font-weight: 600;
+h1 {
+  font-size: 9vw;
+  font-weight: 600;
 }
-h2{
-    font-size: 3rem;
-    font-weight: 600;
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.08px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 112%;
 }
-h3{
-    font-size: 1.5rem;
-    color: var(--black-color);
+h3 {
+  font-size: 1.5rem;
+  color: var(--black-color);
 }
-p{
-    font-size: 1rem;
-    font-weight: 600;
+p {  
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  color: var(--smallCont-color);
 }

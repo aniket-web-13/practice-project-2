@@ -15,28 +15,37 @@
 .rp-card-count {
   width: 100%;
   display: grid;
-  grid-template-columns: 373px 373px 373px;
-  grid-template-rows: 411px;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 411px;
   justify-content: space-between;
   row-gap: 2rem;
 }
 
 .rp-card {
   width: 373px;
-  height: 411px;
+  height: fit-content;
   // border: 1px solid var(--border-color);
   border-radius: 1.25rem;
+  margin: 0 auto;
+  @include flex(column, center, center);
+  gap: 0.5rem;
 }
 
 .card-top {
   width: 100%;
   @include flex(row, center, center);
   position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
 }
 
 .card-top img {
   width: 100%;
   border-radius: 1.25rem;
+  transition: all 0.5s ease;
+  &:hover {
+    scale: 1.1;
+  }
 }
 
 .card-top .card-req {
@@ -51,6 +60,7 @@
   width: 100%;
   height: 25%;
   @include flex(row, start, space-between);
+  gap: 0.5rem;
 }
 
 .card-body .card-title {
@@ -66,6 +76,7 @@
 
   address {
     font-style: normal;
+    font-size: 0.875rem;
   }
 }
 
@@ -81,7 +92,7 @@
 }
 
 .card-body .card-btm .card-btm-info .cb-prop-info {
-  width: 90%;
+  width: 95%;
   padding: 0.2rem;
   display: flex;
   align-items: center;
@@ -90,7 +101,8 @@
   border-radius: 0.2rem;
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
+    margin: 0 !important;
   }
 }
 
@@ -104,7 +116,7 @@
   @include flex(row, center, center);
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -137,11 +149,11 @@
 }
 
 .abt-text {
-  @include flex(column, normal, normal);
-  gap: 5rem;
+  // @include flex(column, normal, normal);
+  // gap: 5rem;
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: 1.2rem;
     color: var(--smallCont-color);
   }
@@ -186,10 +198,16 @@
 
 .pc-card-img {
   width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
 
   img {
     width: 100%;
     border-radius: 1.5rem;
+    transition: all 0.7s ease;
+    &:hover {
+      scale: 1.1;
+    }
   }
 }
 
@@ -199,7 +217,7 @@
   @include flex(column, normal, space-between);
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: 1.2rem;
     color: var(--smallCont-color);
     margin-bottom: 1rem;
@@ -245,10 +263,17 @@
   width: 41%;
 }
 
+.ns-left-postion {
+  width: 25%;
+  height: 532px;
+  position: absolute;
+}
 .ns-left-count {
-  width: 100%;
+  // width: 100%;
   @include flex(column, normal, normal);
   gap: 1rem;
+  position: sticky;
+  top: 20px;
 }
 
 .ns-title {
@@ -265,7 +290,7 @@
   }
 }
 
-.nsec-ridht-box {
+.nsec-right-box {
   width: 47%;
   display: grid;
   grid-template-columns: 270px 270px;
@@ -303,7 +328,7 @@
   text-wrap: wrap;
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: 1.2rem;
     color: var(--smallCont-color);
   }
@@ -341,7 +366,7 @@
 
 .op-img-right {
   width: 45%;
-  height: 1620px;
+  height: 1500px;
 }
 
 .op-info-count {
@@ -351,18 +376,34 @@
 
 .op-step {
   width: 100%;
-  height: 500px;
-  // @include flex(column, start, start);
+  height: 460px;
+  @include flex(row, start, space-between);
   row-gap: 1rem;
 }
-
+// op step img for smaller devices
+// ======================================================= //
+.op-s-img-n1 {
+  display: none;
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+}
+// ======================================================= //
 .op-step .op-s-pad {
   // padding-bottom: 6rem;
   p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: 1.2rem;
     color: var(--smallCont-color);
   }
+}
+
+.op-img-position {
+  width: 542px;
+  height: 1043px;
+  position: absolute;
 }
 
 .steps-in-box {
@@ -375,6 +416,7 @@
   // @include flex(column, end, space-around);
   position: sticky !important;
   top: 20px;
+  // display: none;
 }
 
 .op-step-img {
@@ -401,6 +443,11 @@
 .op-img-3 {
   z-index: 3;
   //  opacity: ;
+}
+
+.op-btm-count-tbm {
+  width: 100%;
+  border: 1px solid black;
 }
 
 // section 7 agents //
@@ -453,11 +500,16 @@
 
   a {
     // display: block;
+    overflow: hidden;
+    border-radius: 1rem;
     img {
       width: 340px;
       height: auto;
       border-radius: 1rem;
-      // aspect-ratio: 4/5;
+      transition: all 0.7s ease;
+      &:hover {
+        scale: 1.1;
+      }
     }
   }
 }
@@ -515,6 +567,8 @@
 .agc9 {
   animation-delay: calc(30s / 10 * (10 - 10) * -1);
 }
+
+// ============================================================================= //
 
 // section 8 tesimonial //
 
@@ -613,11 +667,11 @@
   @include flex(row, center, space-between);
 }
 .a-top-left {
-  width: 85%;
+  width: 80%;
   @include flex(column, start, start);
 }
 .a-top-right {
-  width: 13%;
+  width: 15%;
   // @include flex(row, center, space-between)
 }
 .arti-head {
@@ -636,9 +690,15 @@
 }
 .artcle-img {
   width: 100%;
+  overflow: hidden;
+  border-radius: 1.2rem;
   img {
     width: 100%;
     border-radius: 1.2rem;
+    transition: all 0.7s ease;
+    &:hover {
+      scale: 1.1;
+    }
   }
 }
 .article-body {
@@ -658,14 +718,16 @@
 
     .art-da {
       width: 53%;
-      @include flex(row, center, space-between);
+      @include flex(row, center, normal);
+      row-gap: 0.5rem;
     }
     .art-ta {
       width: 40%;
-      @include flex(row, center, space-between);
+      @include flex(row, center, normal);
+      row-gap: 0.5rem;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 0.875rem;
       line-height: 1.2rem;
       color: var(--smallCont-color);
     }
@@ -677,30 +739,39 @@
 .faq-main-count {
   width: 100%;
   @include flex(row, start, space-between);
-
+  // position: relative;
 }
 .faq-left {
   width: 35%;
-  // height: 80vh;
-  
+  height: 50%;
+  // position: relative;
+  // left: 0%;
+  // top: 0%;
+}
+.sticky-position {
+  width: 20%;
+  height: 452px;
+  position: absolute;
 }
 .faq-heading {
   width: 100%;
   height: fit-content;
   @include flex(column, start, space-between);
   gap: 1rem;
+  position: sticky;
+  top: 20px;
 }
-.faq-right{
+.faq-right {
   width: 60%;
 }
-.question-count{
+.question-count {
   width: 100%;
   @include flex(column, center, space-between);
   gap: 1rem;
 }
 
-.faq-quest{
-  width: 99%;
+.faq-quest {
+  width: 100%;
   padding: 1.5rem;
   background-color: var(--subHead-color);
   border-radius: 1.25rem;
@@ -708,26 +779,35 @@
   @include flex(column, start, space-between);
   // gap: ;
 }
-.faq-q-top{
+.faq-q-top {
   width: 100%;
+  height: fit-content;
   @include flex(row, center, space-between);
   cursor: pointer;
-  h2{
+  // padding: 10px;
+
+  h2 {
     font-size: 1.5rem;
   }
 }
-.faq-icon{
+.faq-icon {
   width: 10%;
   @include flex(row, center, center);
   font-size: 1.25rem;
   font-weight: 100;
-  
 }
 
-.faq-bottom{
+.faq-bottom {
+  position: relative;
   width: 82%;
-  margin-top: 1rem;
-  p{
+  height: 0;
+  overflow: hidden;
+  text-align: justify;
+  line-height: 1.75rem;
+  // padding: 10px;
+  transition: all 0.5s;
+
+  p {
     font-size: 1rem;
     color: var(--smallCont-color);
   }

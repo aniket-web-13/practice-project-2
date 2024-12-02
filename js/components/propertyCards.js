@@ -1,83 +1,81 @@
 let properties = [
-    {
-        own: "Rent",
-        rent: "$400 / month",
-        src: "assets/jpg/Sunset-luxury-villa.jpg",
-        propertyName: "Sunset luxury villa",
-        propertyAdd: "12273 Dream Avenue, New York",
-        sqft: "1490",
-        bed: "3",
-        bath: "2",
-        car: "2",
-    },
-    {
-        own: "Sell",
-        rent: "$50,000",
-        src: "assets/jpg/Parkview-estates.jpg",
-        propertyName: "Parkview estates",
-        propertyAdd: "2972 Westheimer Rd. Santa Ana, Illinois",
-        sqft: "2370",
-        bed: "4",
-        bath: "3",
-        car: "2",
-    },
-    {
-        own: "Rent",
-        rent: "$200 / month",
-        src: "assets/jpg/Cedar-grove-residences.jpg",
-        propertyName: "Cedar grove residences",
-        propertyAdd: "8502 Preston Rd. Inglewood, Maine",
-        sqft: "1300",
-        bed: "3",
-        bath: "3",
-        car: "1",
-    },
-    {
-        own: "Sell",
-        rent: "$35,000",
-        src: "assets/jpg/Lakeside-manor.jpg",
-        propertyName: "Lakeside manor",
-        propertyAdd: "2464 Royal Ln. Mesa, New Jersey",
-        sqft: "700",
-        bed: "2",
-        bath: "1",
-        car: "1",
-    },
-    {
-        own: "Rent",
-        rent: "$520 / month",
-        src: "assets/jpg/Oceanfront-oasis.jpg",
-        propertyName: "Oceanfront oasis",
-        propertyAdd: "6391 Elgin St. Celina, Delaware",
-        sqft: "1500",
-        bed: "3",
-        bath: "3",
-        car: "2",
-    },
-    {
-        own: "rent",
-        rent: "$360 / month",
-        src: "assets/jpg/Skyline-tower.jpg",
-        propertyName: "Skyline tower",
-        propertyAdd: "2715 Ash Dr. San Jose, South Dakota",
-        sqft: "1250",
-        bed: "3",
-        bath: "2",
-        car: "1",
-    },
-]
+  {
+    own: "Rent",
+    rent: "$400 / month",
+    src: "assets/jpg/Sunset-luxury-villa.jpg",
+    propertyName: "Sunset luxury villa",
+    propertyAdd: "12273 Dream Avenue, New York",
+    sqft: "1490",
+    bed: "3",
+    bath: "2",
+    car: "2",
+  },
+  {
+    own: "Sell",
+    rent: "$50,000",
+    src: "assets/jpg/Parkview-estates.jpg",
+    propertyName: "Parkview estates",
+    propertyAdd: "2972 Westheimer Rd. Santa Ana, Illinois",
+    sqft: "2370",
+    bed: "4",
+    bath: "3",
+    car: "2",
+  },
+  {
+    own: "Rent",
+    rent: "$200 / month",
+    src: "assets/jpg/Cedar-grove-residences.jpg",
+    propertyName: "Cedar grove residences",
+    propertyAdd: "8502 Preston Rd. Inglewood, Maine",
+    sqft: "1300",
+    bed: "3",
+    bath: "3",
+    car: "1",
+  },
+  {
+    own: "Sell",
+    rent: "$35,000",
+    src: "assets/jpg/Lakeside-manor.jpg",
+    propertyName: "Lakeside manor",
+    propertyAdd: "2464 Royal Ln. Mesa, New Jersey",
+    sqft: "700",
+    bed: "2",
+    bath: "1",
+    car: "1",
+  },
+  {
+    own: "Rent",
+    rent: "$520 / month",
+    src: "assets/jpg/Oceanfront-oasis.jpg",
+    propertyName: "Oceanfront oasis",
+    propertyAdd: "6391 Elgin St. Celina, Delaware",
+    sqft: "1500",
+    bed: "3",
+    bath: "3",
+    car: "2",
+  },
+  {
+    own: "rent",
+    rent: "$360 / month",
+    src: "assets/jpg/Skyline-tower.jpg",
+    propertyName: "Skyline tower",
+    propertyAdd: "2715 Ash Dr. San Jose, South Dakota",
+    sqft: "1250",
+    bed: "3",
+    bath: "2",
+    car: "1",
+  },
+];
 
 let rpCradCountainer = document.getElementById("cardContainer");
 
-
 for (let i = 0; i < properties.length; i++) {
-    const element = properties[i];
+  const element = properties[i];
 
-
-    let rpCard = document.createElement("div")   
-    rpCard.classList.add("rp-card")
-    rpCradCountainer.appendChild(rpCard)
-    rpCard.innerHTML = `
+  let rpCard = document.createElement("div");
+  rpCard.classList.add("rp-card");
+  rpCradCountainer.appendChild(rpCard);
+  rpCard.innerHTML = `
 
    <div class="card-top">
        <div class="card-rp-img">
@@ -145,10 +143,5 @@ for (let i = 0; i < properties.length; i++) {
        </div>
       </div>
    </div>
-`
-
+`;
 }
-
-
-
-

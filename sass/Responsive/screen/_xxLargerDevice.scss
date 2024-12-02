@@ -1,0 +1,39 @@
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1440px) {
+  .container {
+    width: 85%;
+  }
+
+  // navigation //
+  .hamSec {
+    display: none;
+  }
+
+  // blog and article //
+  .article-card {
+    width: 31%;
+  }
+  // numbers of success //
+  .ns-left-postion {
+    width: 35%;
+  }
+  //our process //
+
+  .our-p-heading {
+    width: 50% !important;
+  }
+  .op-img-right {
+    width: 46%;
+  }
+  // our agents //
+  .agent-card{
+    left: 230%;
+  }
+  // FAQ //
+  .sticky-position {
+    width: 30%;
+  }
+  input , .foot-name ,.foot-email, .ftf-form {
+    width: 92% !important;
+}
+}

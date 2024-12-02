@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real-Estate</title>
     <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="dist/responsive.css">
 </head>
 
 <body>
@@ -32,6 +33,12 @@
                         </div>
                         <div class="nav-right">
                             <a href="#"><button class="nav-btn">Explore All</button></a>
+                        </div>
+                        <div class="hamSec">
+                            <ul>
+                                <li><span>Cart(0)</span></li>
+                                <li> <button class="hamBtn"><i class="fa-solid fa-bars"></i></button></li>
+                            </ul>                            
                         </div>
                     </div>
                 </div>
@@ -62,25 +69,27 @@
         </header>
         <!-- Section Recent Properties -->
         <section>
-            <div class="section-spacing">
-                <div class="container">
-                    <div class="rp-heading">
-                        <div class="rp-title-box">
-                            <div class="sub-head-co">
-                                <p>Recent Properties</p>
-                            </div>
-                            <div class="rp-h2">
-                                <h2>Featured properties</h2>
+            <div class="padding-section">
+                <div class="section-spacing">
+                    <div class="container">
+                        <div class="rp-heading">
+                            <div class="rp-title-box">
+                                <div class="sub-head-co">
+                                    <p>Recent Properties</p>
+                                </div>
+                                <div class="rp-h2">
+                                    <h2>Featured properties</h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="rp-card-count " id="cardContainer">
-
-                    </div>
-                    <div class="rp-btm">
-                        <a href="#" class="rp-btn">Explore All</a>
+                        <div class="rp-card-count " id="cardContainer">
+                        </div>
+                        <div class="rp-btm">
+                            <a href="#" class="rp-btn">Explore All</a>
+                        </div>
                     </div>
                 </div>
+            </div>           
         </section>
         <!-- Home page about us section -->
         <section>
@@ -128,7 +137,9 @@
                             <div class="p-cat-card-count">
                                 <div class="prop-cat-card ">
                                     <div class="pc-card-img">
+                                       <a href="#">
                                         <img src="./assets/jpg/Eco-Friendly-homes.jpg" alt="">
+                                       </a>
                                     </div>
                                     <div class="pc-card-tbody">
                                         <a href="#" class="pcat-sub-head">Eco-Friendly Homes</a>
@@ -139,7 +150,9 @@
                                 </div>
                                 <div class="prop-cat-card ">
                                     <div class="pc-card-img">
+                                       <a href="#">
                                         <img src="./assets/jpg/Commercial-properties.jpg" alt="">
+                                       </a>
                                     </div>
                                     <div class="pc-card-tbody">
                                         <a href="#" class="pcat-sub-head">Commercial Properties</a>
@@ -150,7 +163,9 @@
                                 </div>
                                 <div class="prop-cat-card ">
                                     <div class="pc-card-img">
-                                        <img src="./assets/jpg/Luxury-properties.jpg" alt="">
+                                        <a href="#">
+                                            <img src="./assets/jpg/Luxury-properties.jpg" alt="">
+                                        </a>
                                     </div>
                                     <div class="pc-card-tbody">
                                         <a href="#" class="pcat-sub-head">Luxury Properties</a>
@@ -207,22 +222,25 @@
                 <div class="section-spacing">
                     <div class="container">
                         <div class="number-sec-main-count">
+                            
                             <div class="nsec-left-box">
-                                <div class="ns-left-count">
-                                    <div class="ns-title">
-                                        <p class="sub-head-co">Some Numbers</p>
-                                    </div>
-                                    <div class="ns-text">
+                                <div class="ns-left-postion">
+                                    <div class="ns-left-count">
+                                        <div class="ns-title">
+                                            <p class="sub-head-co">Some Numbers</p>
+                                        </div>
+                                        <div class="ns-text">
+                                            <div>
+                                                <h2>The numbers behind our success</h2>
+                                            </div>
+                                        </div>
                                         <div>
-                                            <h2>The numbers behind our success</h2>
+                                            <a href="#"><button class="rp-btn">Contact Us</button></a>
                                         </div>
                                     </div>
-                                    <div>
-                                        <a href="#"><button class="rp-btn">Contact Us</button></a>
-                                    </div>
-                                </div>
+                                </div>                              
                             </div>
-                            <div class="nsec-ridht-box">
+                            <div class="nsec-right-box">
                                 <div class="ns-card">
                                     <div class="ns-num-text">
                                         <h2>200&plus;</h2>
@@ -280,7 +298,7 @@
                                     <p>Our process</p>
                                 </div>
                                 <div class="our-p-heading">
-                                    <h2>Find your dream house &amp; follow our process</h2>
+                                    <h2>Find your dream house &amp; <br> follow our process</h2>
                                 </div>
                             </div>
                             <div class="op-btm-count ">
@@ -304,6 +322,9 @@
                                                         combination.</p>
                                                 </div>
                                             </div>
+                                            <div class="op-s-img-n1">
+                                                <img src="./assets/jpg/our-process-step-1-img.jpg" alt="">
+                                            </div>                                        
                                         </div>
                                     </div>
                                     <div class="op-info-count">
@@ -324,6 +345,9 @@
                                                         the perfect property that fits your lifestyle and budget.</p>
                                                 </div>
                                             </div>
+                                            <div class="op-s-img-n1">
+                                                <img src="./assets/jpg/our-process-step-2-img.jpg" alt="">
+                                            </div>  
                                         </div>
                                     </div>
                                     <div class="op-info-count">
@@ -344,30 +368,35 @@
                                                         to your and preferences from start to finish.</p>
                                                 </div>
                                             </div>
+                                            <div class="op-s-img-n1">
+                                                <img src="./assets/jpg/our-process-step-3-img.jpg" alt="">
+                                            </div>  
                                         </div>
                                     </div>
                                 </div>
                                 <div class="op-img-right ">
-                                    <div class="op-img-count">
-                                        <div class="op-step-img op-img-1 ">
-                                            <img src="./assets/jpg/our-process-step-1-img.jpg" alt="">
+                                    <div class="op-img-position">
+                                        <div class="op-img-count">
+                                            <div class="op-step-img op-img-1" >
+                                                <img src="./assets/jpg/our-process-step-1-img.jpg" alt="">
+                                            </div>
+                                            <div class="op-step-img op-img-2 ">
+                                                <img src="./assets/jpg/our-process-step-2-img.jpg" alt="">
+                                            </div>
+                                            <div class="op-step-img op-img-3 ">
+                                                <img src="./assets/jpg/our-process-step-3-img.jpg" alt="">
+                                            </div>
                                         </div>
-                                        <div class="op-step-img op-img-2 ">
-                                            <img src="./assets/jpg/our-process-step-2-img.jpg" alt="">
-                                        </div>
-                                        <div class="op-step-img op-img-3 ">
-                                            <img src="./assets/jpg/our-process-step-3-img.jpg" alt="">
-                                        </div>
-                                    </div>
+                                    </div>                                   
                                 </div>
-                            </div>
-                        </div>
+                            </div>                            
+                        </div>                        
                     </div>
                 </div>
             </div>
         </section>
         <!-- home page section Oue Agents  -->
-         <section>
+        <section>
             <div class="padding-section">
                 <div class="section-spacing">
                     <div class="container">
@@ -386,9 +415,9 @@
                     </div>
                 </div>               
             </div>
-         </section>
-         <!-- home page section Testimonials -->
-         <section>
+        </section>
+        <!-- home page section Testimonials -->
+        <section>
             <div class="padding-section">
                 <div class="section-spacing">
                     <div class="container">
@@ -414,9 +443,9 @@
                     </div>                    
                 </div>                            
             </div>
-         </section>
-         <!-- home page section Blogs and Articles -->
-          <section>
+        </section>
+        <!-- home page section Blogs and Articles -->
+        <section>
             <div class="padding-section">
                 <div class="section-spacing">
                     <div class="container ">
@@ -441,24 +470,26 @@
                     </div>
                 </div>
             </div>
-          </section>
-          <!-- home ppage section FAQ -->
-           <section>
+        </section>
+        <!-- home ppage section FAQ -->
+        <section>
             <div class="padding-section">
                 <div class="section-spacing">
                     <div class="container ">
                         <div class="faq-main-count">
                             <div class="faq-left">
-                                <div class="faq-heading">
-                                    <div class="ns-title">
-                                        <p class="sub-head-co">FAQ</p>
-                                    </div>
-                                    <div class="ns-text">
-                                        <div>
-                                            <h2>Frequently Asked Questions</h2>
+                                <div class="sticky-position">
+                                    <div class="faq-heading">
+                                        <div class="ns-title">
+                                            <p class="sub-head-co">FAQ</p>
+                                        </div>
+                                        <div class="ns-text">
+                                            <div>
+                                                <h2>Frequently Asked Questions</h2>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>                                
                             </div>
                             <div class="faq-right">
                                 <div class="question-count" id="questionConatiner">
@@ -479,7 +510,77 @@
                     </div>
                 </div>
             </div>
-           </section>
+        </section>
+        <!-- footer -->
+        <footer>
+                <div class="foot-section">
+                    <div class="section-spacing">
+                        <div class="container ">
+                            <div class="foot-main-count">
+                                <div class="foot-top">
+                                    <div class="foot-top-left">
+                                        <div class="foot-form">
+                                            <div class="ff-heading">
+                                                <div class="sub-head-co">
+                                                    <p>Contact</p>
+                                                </div>
+                                                <div class="arti-heading">
+                                                    <h2>Want to contact with us?</h2>
+                                                </div>
+                                            </div>
+                                            <div class="ftf-form">
+                                                <div class="foot-name">
+                                                    <input type="text" class="input_outline" id="text" placeholder="Name">
+                                                </div>
+                                                <div class="foot-email">
+                                                    <input type="email" class="input_outline" id="email" placeholder="Email">
+                                                </div>
+                                                <a href="#" class="p-cat-btn">Book a call</a>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="foot-top-right">
+                                        <img src="./assets/png/foot-home.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="foot-bottom">
+                                    <div class="foot-btm-left">
+                                            <a href="#">Realfy</a>
+                                       <div class="foot-para">
+                                            <p>Lorem ipsum dolor sit amet consectetur&period; dolor semper felis pulvinar feugiat risus adipiscing dictum&period;</p>
+                                       </div>
+                                       <div class="foot-view-m">
+                                            <a href="#"><button class="foot-vmt-btn">View More Templates</button></a>
+                                       </div>
+                                    </div>
+                                    <div class="foot-btm-right">
+                                        <div class="foot-l-box">
+                                            <div class="f-l-title"></div>
+                                            <div class="foot-links"></div>
+                                        </div>
+                                        <div class="foot-l-box">
+                                            <div class="f-l-title"></div>
+                                            <div class="foot-links"></div>
+                                        </div>
+                                        <div class="foot-l-box">
+                                            <div class="f-l-title"></div>
+                                            <div class="foot-links"></div>
+                                        </div>
+                                        <div class="foot-l-box">
+                                            <div class="f-l-title"></div>
+                                            <div class="foot-links"></div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="foot-copyright-box">
+                                    <div class="copyright-line"></div>
+                                    <p>&copy;Realvy&period; All rights reserved&period;</p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+        </footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
         integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
@@ -489,6 +590,7 @@
     <script src="./js/components/testimonial.js"></script>
     <script src="./js/components/articlesBlog.js"></script>
     <script src="./js/components/faq.js"></script>
+    <script src="./js/components/footLinks.js"></script>
 </body>
 
 </html>

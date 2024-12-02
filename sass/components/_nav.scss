@@ -1,7 +1,7 @@
 .nav-section {
   z-index: 99;
   padding: 2rem 0.5rem;
-  position: relative;
+  // position: relative;
 }
 
 .nav-layout {
@@ -32,4 +32,26 @@
     text-decoration: none;
     color: var(--navLink-color);
   }
+}
+
+.hamSec {
+  display: none;
+  width: 40%;
+ ul{
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+ }
+ 
+}
+
+.hamBtn {
+  padding: 0.5rem 0.75rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  border: none;
 }
