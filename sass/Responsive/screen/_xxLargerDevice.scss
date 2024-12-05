@@ -1,5 +1,5 @@
 // XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1440px) {
+@media (max-width: 1445px) {
   .container {
     width: 85%;
   }
@@ -23,17 +23,24 @@
     width: 50% !important;
   }
   .op-img-right {
-    width: 46%;
+    width: 50% !important;
   }
   // our agents //
-  .agent-card{
-    left: 230%;
+  .agent-card {
+    left: 3400px;
   }
   // FAQ //
   .sticky-position {
     width: 30%;
   }
-  input , .foot-name ,.foot-email, .ftf-form {
-    width: 92% !important;
-}
+  input,
+  .foot-name,
+  .foot-email,
+  .ftf-form {
+    width: 92%;
+  }
+  // html page 2 about us //
+  .ov-left-postion {
+    width: 35%;
+  }
 }

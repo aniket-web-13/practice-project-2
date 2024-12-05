@@ -34,7 +34,7 @@
 
   .hamSec {
     display: block !important;
-    width: 40% !important;
+    width: 30% !important;
   }
 
   //  Header //
@@ -46,7 +46,7 @@
   }
   .head-h1 h1 {
     font-size: 11vw !important;
-}
+  }
 
   // recent Properties //
 
@@ -130,6 +130,7 @@
   }
 
   .nsec-right-box {
+    width: 100% !important;
     display: grid;
     grid-template-columns: 270px;
   }
@@ -149,8 +150,7 @@
   }
   .op-s-img-n1 {
     width: 100% !important;
-  
-}
+  }
 
   // our agent //
   .main-agent-box {
@@ -310,5 +310,58 @@
       color: var(--white-color);
     }
   }
- 
+
+  // html page 2 about us //
+
+  .about-sec-left-count {
+    width: 100% !important;
+  }
+  .asbl-list ul {
+    display: block !important;
+  }
+  .values-main-count {
+    width: 100%;
+    flex-direction: column !important;
+    gap: 2rem;
+  }
+  .ov-left-box {
+    width: 100%;
+    height: fit-content;
+  }
+  .ov-left-postion {
+    width: 100% !important;
+    height: fit-content;
+    position: static;
+  }
+  .value-right-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    .ns-card {
+      width: 100% !important;
+    }
+  }
+  // html page 3 agents //
+  .agentsMainCount{
+    grid-template-columns: repeat(1, minmax(0, 1fr));  
+  }
+  //html page 4 our Services //
+  .our-services-main-count{
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+   
+  }
+  .servicCard{
+    gap: 1rem;
+    aspect-ratio: auto !important;
+  }
+  .servicCard .value-info{
+    gap: 0;
+  }
+  .servicCard .value-info .value-title {
+    width: 100%;
+    h2 {
+      font-size: 1.375rem !important;
+    }
+  }
 }

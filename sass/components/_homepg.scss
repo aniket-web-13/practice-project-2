@@ -52,14 +52,14 @@
   width: 90%;
   position: absolute;
   top: 1rem;
-  @include flex(row, start, space-between);
+  @include flex(row, flex-start, space-between);
 }
 
 .rp-card .card-body {
   padding: 0.3rem;
   width: 100%;
   height: 25%;
-  @include flex(row, start, space-between);
+  @include flex(row, flex-start, space-between);
   gap: 0.5rem;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .card-body .card-add {
-  @include flex(row, center, flex-start);
+  @include flex(row, center, flex-flex-start);
   column-gap: 0.5rem;
   margin-bottom: 0.5rem;
 
@@ -183,7 +183,7 @@
 }
 
 .p-cat-heading {
-  width: 43%;
+  width: 45%;
   text-align: center;
 }
 
@@ -291,22 +291,23 @@
 }
 
 .nsec-right-box {
-  width: 47%;
+  width: 49%;
   display: grid;
-  grid-template-columns: 270px 270px;
-  grid-template-rows: 254px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   justify-content: space-between;
   row-gap: 1.5rem;
 }
 
 .ns-card {
   width: 270px;
-  height: 254px;
   border-radius: 1.5rem;
   padding: 1.5rem 1.2rem;
   border: 1px solid var(--border-color);
   background-color: var(--subHead-color);
   @include flex(column, normal, space-between);
+  gap: 3rem;
+  margin: 0 auto
 }
 
 .ns-num-text {
@@ -356,7 +357,7 @@
 
 .op-btm-count {
   width: 100%;
-  @include flex(row, start, space-between);
+  @include flex(row, flex-start, space-between);
 }
 
 .op-info-left {
@@ -377,7 +378,7 @@
 .op-step {
   width: 100%;
   height: 460px;
-  @include flex(row, start, space-between);
+  @include flex(row, flex-start, space-between);
   row-gap: 1rem;
 }
 // op step img for smaller devices
@@ -408,7 +409,7 @@
 
 .steps-in-box {
   width: 100%;
-  @include flex(column, start, start);
+  @include flex(column, flex-start, flex-start);
   row-gap: 1rem;
 }
 
@@ -489,7 +490,7 @@
 .agent-card {
   width: 340px;
   height: 500px;
-  @include flex(column, start, center);
+  @include flex(column, flex-start, center);
   position: absolute;
   left: 175%;
   top: 0;
@@ -623,12 +624,12 @@
 .test-in-info {
   width: 100%;
   height: 100%;
-  @include flex(row, start, space-between);
+  @include flex(row, flex-start, space-between);
 }
 .test-l-info {
   width: 62%;
   height: 100%;
-  @include flex(column, start, space-between);
+  @include flex(column, flex-start, space-between);
 
   h2 {
     font-size: 1.5rem;
@@ -648,8 +649,7 @@
   max-width: 821px;
   height: auto;
   margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 88px;
+  margin-right: auto; 
 }
 
 // section 9 blogs and articles //
@@ -668,7 +668,7 @@
 }
 .a-top-left {
   width: 80%;
-  @include flex(column, start, start);
+  @include flex(column, flex-start, flex-start);
 }
 .a-top-right {
   width: 15%;
@@ -677,7 +677,7 @@
 .arti-head {
   width: 100%;
   margin-bottom: 2rem;
-  @include flex(column, start, start);
+  @include flex(column, flex-start, flex-start);
   gap: 1rem;
 }
 .arti-heading {
@@ -685,8 +685,8 @@
   text-align: left;
 }
 .article-card {
-  width: 30%;
-  @include flex(column, start, center);
+  width: 31%;
+  @include flex(column, flex-start, center);
 }
 .artcle-img {
   width: 100%;
@@ -703,7 +703,7 @@
 }
 .article-body {
   width: 100%;
-  @include flex(column, start, center);
+  @include flex(column, flex-start, center);
   gap: 0.8rem;
   .art-a {
     color: var(--black-color);
@@ -738,7 +738,7 @@
 
 .faq-main-count {
   width: 100%;
-  @include flex(row, start, space-between);
+  @include flex(row, flex-start, space-between);
   // position: relative;
 }
 .faq-left {
@@ -756,7 +756,7 @@
 .faq-heading {
   width: 100%;
   height: fit-content;
-  @include flex(column, start, space-between);
+  @include flex(column, flex-start, space-between);
   gap: 1rem;
   position: sticky;
   top: 20px;
@@ -776,7 +776,7 @@
   background-color: var(--subHead-color);
   border-radius: 1.25rem;
   border: 1px solid var(--border-color);
-  @include flex(column, start, space-between);
+  @include flex(column, flex-start, space-between);
   // gap: ;
 }
 .faq-q-top {

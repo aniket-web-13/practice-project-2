@@ -9,40 +9,10 @@
     <link rel="stylesheet" href="dist/responsive.css">
 </head>
 
-<body>
+<body onload="hpAgentCard()">
     <main>
         <!-- navigation Bar -->
-        <nav>
-            <div class="nav-section">
-                <div class="container">
-                    <div class="nav-layout">
-                        <div class="nav-left">
-                            <a href="#">
-                                <img src="https://cdn.prod.website-files.com/670010141e02b62e6f054e13/672b0cbffbb01b1ebb84e214_Realfy.svg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="nav-middle">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="">Pages&nbsp;<i class="fa-solid fa-chevron-down"></i></a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="">Cart</a></li>
-                            </ul>
-                        </div>
-                        <div class="nav-right">
-                            <a href="#"><button class="nav-btn">Explore All</button></a>
-                        </div>
-                        <div class="hamSec">
-                            <ul>
-                                <li><span>Cart(0)</span></li>
-                                <li> <button class="hamBtn"><i class="fa-solid fa-bars"></i></button></li>
-                            </ul>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <nav id="navbar">          
         </nav>
         <!-- header -->
         <header>
@@ -181,112 +151,9 @@
             </div>
         </section>
         <!-- home page section best in Real Estate -->
-        <section>
-            <!-- here use about section css -->
-            <div class="padding-section">
-                <div class="section-spacing">
-                    <div class="container">
-                        <div class="about-info">
-                            <!-- this is about section right side css use left side to this div -->
-                            <div class="about-right-count">
-                                <div class="r-in-img">
-                                    <img src="./assets/jpg/best-real-estate-sec.jpg" alt="">
-                                </div>
-                            </div>
-                            <!-- this is about section left side css use right side in this div -->
-                            <div class="about-left-count">
-                                <div class="abt-title">
-                                    <p class="sub-head-co">Why Choose Us</p>
-                                </div>
-                                <div class="abt-text">
-                                    <div class="bre-h2">
-                                        <h2>Why we are best in Real-Estate market&quest;</h2>
-                                    </div>
-                                    <p>With our unmatched expertise&comma; personalized service&comma; and deep
-                                        knowledge of the real estate market&comma; we make your home buying or selling
-                                        experience seamless and stress&#8209;free&period; Our dedicated team of
-                                        professionals listens to your needs&comma; provides tailored&period;</p>
-                                </div>
-                                <div>
-                                    <a href="#"><button class="rp-btn">Read more</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="bestRealEstate"></section>
         <!-- home page section Some numbers of success -->
-        <section>
-            <div class="padding-section">
-                <div class="section-spacing">
-                    <div class="container">
-                        <div class="number-sec-main-count">
-                            
-                            <div class="nsec-left-box">
-                                <div class="ns-left-postion">
-                                    <div class="ns-left-count">
-                                        <div class="ns-title">
-                                            <p class="sub-head-co">Some Numbers</p>
-                                        </div>
-                                        <div class="ns-text">
-                                            <div>
-                                                <h2>The numbers behind our success</h2>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <a href="#"><button class="rp-btn">Contact Us</button></a>
-                                        </div>
-                                    </div>
-                                </div>                              
-                            </div>
-                            <div class="nsec-right-box">
-                                <div class="ns-card">
-                                    <div class="ns-num-text">
-                                        <h2>200&plus;</h2>
-                                        <p>Properties</p>
-                                    </div>
-                                    <div class="ns-info-text">
-                                        <p>Discover the key figures that highlight impact in the real estate
-                                            market&period; satisfied clients to successful transactions</p>
-                                    </div>
-                                </div>
-                                <div class="ns-card">
-                                    <div class="ns-num-text">
-                                        <h2>300&plus;</h2>
-                                        <p>Satisfied Users</p>
-                                    </div>
-                                    <div class="ns-info-text">
-                                        <p>Take a closer look at the that reflect our growth&comma; success&comma; and
-                                            dedication to helping clients achieve their real estate goals&period;</p>
-                                    </div>
-                                </div>
-                                <div class="ns-card">
-                                    <div class="ns-num-text">
-                                        <h2>100&percnt;</h2>
-                                        <p>Happy Clients</p>
-                                    </div>
-                                    <div class="ns-info-text">
-                                        <p>From closed deals to client satisfaction ratings&comma; our numbers showcase
-                                            the impact we&quot;ve made in the real estate industry</p>
-                                    </div>
-                                </div>
-                                <div class="ns-card">
-                                    <div class="ns-num-text">
-                                        <h2>900K</h2>
-                                        <p>Follower</p>
-                                    </div>
-                                    <div class="ns-info-text">
-                                        <p>Explore the numbers our real estate success&comma; showcasing the trust
-                                            clients place in us and the results we consistently deliver&period;</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="successNumber"></section>
         <!-- home page section Our Process -->
         <section>
             <div class="padding-section">
@@ -411,7 +278,7 @@
                     </div>                   
                 </div>
                 <div class="main-agent-box">
-                    <div class="agents-container" id="agent-count">                   
+                    <div class="agents-container" id="agentCount">                   
                     </div>
                 </div>               
             </div>
@@ -445,152 +312,24 @@
             </div>
         </section>
         <!-- home page section Blogs and Articles -->
-        <section>
-            <div class="padding-section">
-                <div class="section-spacing">
-                    <div class="container ">
-                        <div class="article-main-box">
-                            <div class="article-top-box">
-                                <div class="a-top-left">
-                                    <div class="arti-head">
-                                        <div class="sub-head-co">
-                                            <p>Articles</p>
-                                        </div>
-                                        <div class="arti-heading">
-                                            <h2>Read our latest blogs</h2>
-                                        </div>
-                                    </div>                            
-                                </div>
-                                <div class="a-top-right">
-                                    <a href="#" class="rp-btn">Explore All</a>
-                                </div>                                
-                            </div>
-                            <div class="article-btm-box" id="article-card-main-box"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="blog-article"></section>
         <!-- home ppage section FAQ -->
-        <section>
-            <div class="padding-section">
-                <div class="section-spacing">
-                    <div class="container ">
-                        <div class="faq-main-count">
-                            <div class="faq-left">
-                                <div class="sticky-position">
-                                    <div class="faq-heading">
-                                        <div class="ns-title">
-                                            <p class="sub-head-co">FAQ</p>
-                                        </div>
-                                        <div class="ns-text">
-                                            <div>
-                                                <h2>Frequently Asked Questions</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                                
-                            </div>
-                            <div class="faq-right">
-                                <div class="question-count" id="questionConatiner">
-                                    <!-- <div class="faq-quest">
-                                        <div class="faq-q-top">
-                                            <h2>How long does it take to buy a home?</h2>
-                                            <div class="faq-icon">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </div>
-                                        </div>
-                                        <div class="faq-bottom">
-                                            <p>The home-buying process typically takes 30 to 60 days from the time an offer is accepted, depending on factors like financing, inspections, and the closing process.</p>
-                                        </div>                                        
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="faqSec"></section>
         <!-- footer -->
-        <footer>
-                <div class="foot-section">
-                    <div class="section-spacing">
-                        <div class="container ">
-                            <div class="foot-main-count">
-                                <div class="foot-top">
-                                    <div class="foot-top-left">
-                                        <div class="foot-form">
-                                            <div class="ff-heading">
-                                                <div class="sub-head-co">
-                                                    <p>Contact</p>
-                                                </div>
-                                                <div class="arti-heading">
-                                                    <h2>Want to contact with us?</h2>
-                                                </div>
-                                            </div>
-                                            <div class="ftf-form">
-                                                <div class="foot-name">
-                                                    <input type="text" class="input_outline" id="text" placeholder="Name">
-                                                </div>
-                                                <div class="foot-email">
-                                                    <input type="email" class="input_outline" id="email" placeholder="Email">
-                                                </div>
-                                                <a href="#" class="p-cat-btn">Book a call</a>                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="foot-top-right">
-                                        <img src="./assets/png/foot-home.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="foot-bottom">
-                                    <div class="foot-btm-left">
-                                            <a href="#">Realfy</a>
-                                       <div class="foot-para">
-                                            <p>Lorem ipsum dolor sit amet consectetur&period; dolor semper felis pulvinar feugiat risus adipiscing dictum&period;</p>
-                                       </div>
-                                       <div class="foot-view-m">
-                                            <a href="#"><button class="foot-vmt-btn">View More Templates</button></a>
-                                       </div>
-                                    </div>
-                                    <div class="foot-btm-right">
-                                        <div class="foot-l-box">
-                                            <div class="f-l-title"></div>
-                                            <div class="foot-links"></div>
-                                        </div>
-                                        <div class="foot-l-box">
-                                            <div class="f-l-title"></div>
-                                            <div class="foot-links"></div>
-                                        </div>
-                                        <div class="foot-l-box">
-                                            <div class="f-l-title"></div>
-                                            <div class="foot-links"></div>
-                                        </div>
-                                        <div class="foot-l-box">
-                                            <div class="f-l-title"></div>
-                                            <div class="foot-links"></div>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                                <div class="foot-copyright-box">
-                                    <div class="copyright-line"></div>
-                                    <p>&copy;Realvy&period; All rights reserved&period;</p>
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-        </footer>
+        <footer id="footer"></footer>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
         integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/components/navbar.js"></script>
     <script src="./js/components/propertyCards.js"></script>
     <script src="./js/components/agentsCards.js"></script>
     <script src="./js/components/testimonial.js"></script>
     <script src="./js/components/articlesBlog.js"></script>
     <script src="./js/components/faq.js"></script>
     <script src="./js/components/footLinks.js"></script>
+    <script src="./js/components/successNumber.js"></script>
+    <script src="./js/components/bestRealEstate.js"></script>
 </body>
 
 </html>

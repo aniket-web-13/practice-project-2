@@ -1,6 +1,5 @@
 // Large devices (desktops, 992px and up)
-@media (max-width: 992px) { 
-
+@media (max-width: 992px) {
   .container {
     width: 100% !important;
     margin-right: auto !important;
@@ -9,6 +8,9 @@
   .padding-section {
     padding: 2.5rem 0 !important;
   }
+  .our-service-padding{    
+    padding-bottom: 2.5rem !important;
+}
   //   navigation bar //
   .nav-middle,
   .nav-right {
@@ -73,6 +75,7 @@
   //  sone number of success //
   .number-sec-main-count {
     gap: 2rem;
+    justify-content: center;
   }
   .ns-left-postion {
     width: 100% !important;
@@ -83,7 +86,7 @@
     width: 100%;
   }
   .ns-left-count {
-    align-items: center ;
+    align-items: center;
     justify-content: center !important;
   }
   .ns-text {
@@ -91,7 +94,7 @@
     text-align: center;
   }
   .nsec-right-box {
-    width: 100% !important; 
+    width: 60% !important;
     justify-content: center;
     gap: 1.5rem;
   }
@@ -129,74 +132,110 @@
   .btn-sec {
     width: 35%;
   }
-  .card-show{
+  .card-show {
     padding-bottom: 0;
   }
-//   blog and article //
-.a-top-right {
+  //   blog and article //
+  .a-top-right {
     width: 20%;
-}
-.article-btm-box {
+  }
+  .article-btm-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-}
-.article-card {
-    width: 94%;
+  }
+  .article-card {
+    width: 94% !important;
     margin: 0 auto;
-}
-.art-b-dt {
-  width: 85% !important;
-}
-// FAQ //
-.faq-main-count{
+  }
+  .art-b-dt {
+    width: 85% !important;
+  }
+  // FAQ //
+  .faq-main-count {
     gap: 2rem;
-}
-.sticky-position {
-    width: 100%;
+  }
+  .sticky-position {
+    width: 100% !important;
     height: auto;
     position: static;
-}
-.faq-left {
+  }
+  .faq-left {
     width: 100% !important;
     height: auto;
-}
-.faq-right {
+  }
+  .faq-right {
     width: 100% !important;
-}
-.faq-heading{
-    .ns-text{
-        width: 70%;
-        h2{
-            text-align: left;
-            font-size: 2.5rem;
-        }
+  }
+  .faq-heading {
+    .ns-text {
+      width: 70%;
+      h2 {
+        text-align: left;
+        font-size: 2.5rem;
+      }
     }
-}
- //  footer //
- .foot-top {
+  }
+  //  footer //
+  .foot-top {
     flex-direction: column !important;
   }
-  .foot-top-left , .ftf-form ,.foot-top-right , .foot-btm-left {
+  .foot-top-left,
+  .ftf-form,
+  .foot-top-right,
+  .foot-btm-left {
     width: 100% !important;
   }
   input {
     width: 100% !important;
-}
-.foot-name , .foot-email{
+  }
+  .foot-name,
+  .foot-email {
     width: 100%;
-}
-.foot-para p {
+  }
+  .foot-para p {
     color: var(--white-color);
-}
-.foot-btm-right {
+  }
+  .foot-btm-right {
     width: 100%;
-}
-.foot-bottom {
+  }
+  .foot-bottom {
     gap: 2rem;
-}
-.foot-para {
+  }
+  .foot-para {
     width: 50%;
-}
-       
+  }
+
+  // html page 2 about us //
+  .values-main-count {
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .ov-left-box {
+    width: 100% !important;
+    height: fit-content;
+  }
+  .ov-left-postion {
+    width: 100% !important;
+    height: fit-content;
+    position: static;
+  }
+  .value-right-box {
+    width: 100% !important;
+    .ns-card {
+      width: 95% !important;
+    }
+  }
+  .about-sec-left-count {
+    width: 70% !important;
+  }
+    //html page 4 our Services //
+    .our-services-main-count{
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+     
+    }
+    .servicCard{
+      aspect-ratio: 4/5 !important;
+    }
 }

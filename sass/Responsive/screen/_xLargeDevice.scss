@@ -1,12 +1,15 @@
 // X-Large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .container {
     width: 100% !important;
     margin-right: auto !important;
     margin-left: auto !important;
   }
   .padding-section {
-    padding: 3.5rem 0 !important;
+    padding: 3.75rem 0 !important;
+  }
+  .our-service-padding {
+    padding: 3.75rem 0 !important;
   }
   // navigation //
   .nav-section {
@@ -32,8 +35,8 @@
   .rp-card-count {
     grid-template-columns: 1fr 1fr 1fr !important;
   }
-  .cb-prop-info{
-    p{
+  .cb-prop-info {
+    p {
       font-size: 0.75rem !important;
     }
   }
@@ -70,10 +73,10 @@
   .agent-card {
     left: 3400px;
   }
-// blog and article //
-.art-b-dt {
-  width: 85% !important;
-}
+  // blog and article //
+  .art-b-dt {
+    width: 85% !important;
+  }
   // FAQ //
   .faq-left {
     width: 32%;
@@ -82,8 +85,33 @@
     width: 67%;
   }
   // footer //
-  input , .foot-name ,.foot-email, .ftf-form {
+  input,
+  .foot-name,
+  .foot-email,
+  .ftf-form {
     width: 100% !important;
-}
+  }
 
+  // html page 2 about us  //
+  .ov-left-postion {
+    width: 40%;
+  }
+  .value-right-box {
+    width: 60%;
+  }
+  .ov-left-box {
+    width: 37%;
+  }
+
+   //html page 4 our Services //
+   .our-services-main-count{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+   
+  }
+  .servicCard{
+    aspect-ratio: 4/5;
+  }
+  .servicCard .value-info .value-title {
+    width: 100%;   
+  }
 }

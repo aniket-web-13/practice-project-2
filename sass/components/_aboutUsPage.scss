@@ -1,0 +1,91 @@
+.hero-main-count {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+}
+
+.about-hero-img {
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+}
+.about-head-h1 {
+  letter-spacing: -0.08em;
+  width: 100%;
+  text-transform: uppercase;
+  h1 {
+    font-size: 10.5vw;
+  }
+}
+
+.about-sec-left-count {
+  width: 45%;
+  @include flex(column, start, space-between);
+}
+
+.about-sec-l-top {
+  width: 90%;
+  @include flex(column, start, center);
+  gap: 1.5rem;
+}
+.about-sec-l-btm {
+  width: 100%;
+  @include flex(column, start, center);
+  gap: 1.5rem;
+}
+.aslb-para {
+  width: 90%;
+}
+.asbl-list {
+  width: 90%;
+  padding-left: 1.5rem;
+}
+.asbl-list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+.asbl-list ul li p {
+  color: var(--black-color);
+}
+// our values //
+.values-main-count {
+  width: 100%;
+  @include flex(row, center, space-between);
+}
+.value-right-box{
+  width: 49%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  row-gap: 1.5rem;
+}
+.ov-left-box{
+  width: 41%;
+  height: 751px;
+}
+.ov-left-postion{
+  width: 25%;
+  height: 751px;
+  position: absolute;
+}
+.ov-list{
+  width: 100%;
+  padding-left: 1.5rem;
+}
+.ov-list ul li p {
+  color: var(--black-color);
+    letter-spacing: -.1px;
+    margin-bottom: 12px;    
+    font-weight: 600;
+    line-height: 100%;
+}
+.value-title{
+  h2{
+    font-size: 1.5rem;
+  }
+}

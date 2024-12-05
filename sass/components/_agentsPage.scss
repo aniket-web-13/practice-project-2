@@ -1,0 +1,27 @@
+.agentsMainCount{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));  
+    gap: 1rem;
+}
+.agent-p-card{
+    width: fit-content;
+    height: fit-content;
+    @include flex(column, flex-start, center);
+    a {        
+        overflow: hidden;
+        border-radius: 1rem;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 1rem;
+          transition: all 0.7s ease;
+          &:hover {
+            scale: 1.1;
+          }
+        }
+      }
+}
+.agent-p-card:nth-last-child(1){
+    display: none;
+}       

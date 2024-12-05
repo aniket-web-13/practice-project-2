@@ -1,0 +1,31 @@
+.our-services-main-count {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+.our-service-padding{
+    padding-top: 0;
+    padding-bottom: 5rem;
+}
+.servicCard {
+  width: 100%;
+  height: fit-content;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--subHead-color);
+  @include flex(column, flex-start, center);
+  gap: 3rem;
+    
+}
+.servicCard .value-info .value-title {
+  width: 80%;
+  h2 {
+    font-size: 2rem;
+  }
+}
+.servicCard .value-info {
+  @include flex(column, flex-start, center);
+  gap: 1rem;
+}
