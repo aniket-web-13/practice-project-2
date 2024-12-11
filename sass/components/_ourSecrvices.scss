@@ -29,3 +29,12 @@
   @include flex(column, flex-start, center);
   gap: 1rem;
 }
+
+// Realtor thml page 2 css //
+.real-head-h1 {
+  letter-spacing: -0.08em;
+  width: 100%;  
+  h1 {
+    font-size: 3.5vw;
+  }
+}

@@ -1,26 +1,36 @@
-.nav-btn{
-    padding: 0.7rem 1.5rem;
-    border-radius: 0.7rem;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 1.1rem;
-    &:hover{
-        background-color: var(--smallCont-color);
-    }
+.nav-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.7rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+  &:hover {
+    background-color: var(--smallCont-color);
+  }
 }
 
 // section properties btn//
 
-.rp-btn{
-    padding: 0.875rem 1.375rem;
-    border-radius: 0.5rem;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 1.1rem;
-   text-decoration: none;
-    &:hover{
-        background-color: var(--smallCont-color);
-    }
+.rp-btn {
+  padding: 0.875rem 1.375rem;
+  border-radius: 0.5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  &:hover {
+    background-color: var(--smallCont-color);
+    animation-name: hoverSliderLtR;
+    transition: all 0.5s ease;
+  }
+}
+@keyframes hoverSliderLtR {
+  to {
+    transform: translate(0px);
+  }
+  from {
+    transform: translate(100px);
+  }
 }

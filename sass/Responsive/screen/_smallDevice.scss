@@ -17,6 +17,9 @@
   .padding-section {
     padding: 2.5rem 0;
   }
+  .nav-layout {
+    margin: 0;
+  }
 
   .nav-middle,
   .nav-right {
@@ -343,19 +346,18 @@
     }
   }
   // html page 3 agents //
-  .agentsMainCount{
-    grid-template-columns: repeat(1, minmax(0, 1fr));  
+  .agentsMainCount {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   //html page 4 our Services //
-  .our-services-main-count{
+  .our-services-main-count {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-   
   }
-  .servicCard{
+  .servicCard {
     gap: 1rem;
     aspect-ratio: auto !important;
   }
-  .servicCard .value-info{
+  .servicCard .value-info {
     gap: 0;
   }
   .servicCard .value-info .value-title {
@@ -363,5 +365,27 @@
     h2 {
       font-size: 1.375rem !important;
     }
+  }
+  // html page 4 Realtor page form //
+  .real-head-h1 {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .realtor-form-count {
+    width: 100%;
+    padding: 1.25rem;
+  }
+  .fm-inner-row {
+    flex-direction: column;
+  }
+  .fmr-column {
+    width: 100%;
+  }
+  .form-innr-middle {
+    gap: 0.5rem;
+  }
+  .checkbox-label-div {
+    width: 80%;
   }
 }

@@ -1,0 +1,92 @@
+.realtor-main-container{
+  width: 100%;
+  @include flex(column,center,center);
+  gap: 3rem;
+}
+
+.realtor-form-count {
+  width: 65.8%
+  ;
+  background-color: #F7F7F7;
+  padding: 2.5rem;
+  @include flex(column, center, center);
+  gap: 1rem;
+  border-radius: 1.75rem;
+}
+.form-innr-top {
+  width: 100%;
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+.form-innr-middle {
+  width: 100%;
+  @include flex(column,center,center);
+  gap: 1rem;
+}
+.form-innr-bottom {
+  width: 100%;
+  @include flex(column,center,center);
+  gap: 1rem;
+}
+.fm-inner-row {
+  @include flex(row, center, space-between);
+  width: 100%; 
+//   border: 1px solid black;
+}
+.fmr-column{
+    @include flex(column,flex-start,center);
+    gap: 0.5rem;
+    width: 48%;
+    p{
+        color: #808080;
+    }
+}
+.fm-input{
+    width: 100%;
+    input{
+        background-color: var(--white-color);
+        padding: 0.813rem 1.25rem 0.875rem;
+        border-radius: 0.75rem;
+        width: 100%;
+        color: var(--black-color);
+    }
+}
+.fm-checkbox{
+  width: 100%;  
+  @include flex(row,flex-start,flex-start);
+ 
+  label{
+    font-size: 1rem;   
+  }
+}
+.checkbox-inp-div{
+  width: fit-content;
+  input{
+    width: fit-content;
+    margin-right: 1rem;
+  }
+}
+.fmb-lable{
+  width: 100%;
+@include flex (column,flex-start,center);
+gap: 0.5rem;
+label{
+  font-size: 0.875rem;
+  color: #808080;
+}
+input{
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 0.813rem 1.25rem 0.875rem;
+  border-radius: 0.875rem;
+  color: var(--black-color);
+}
+}
+
+.realtor-form-count .rp-btn{
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 0.875rem;  
+}
+
