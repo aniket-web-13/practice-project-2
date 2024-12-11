@@ -7,7 +7,7 @@ bestRealEstate.innerHTML = `
                             <!-- this is about section right side css use left side to this div -->
                             <div class="about-right-count">
                                 <div class="r-in-img">
-                                    <img src="../assets/jpg/best-real-estate-sec.jpg" alt="">
+                                    <img src="./assets/jpg/best-real-estate-sec.jpg" alt="">
                                 </div>
                             </div>
                             <!-- this is about section left side css use right side in this div -->
