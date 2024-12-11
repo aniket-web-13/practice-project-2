@@ -16,9 +16,9 @@ navbar.innerHTML = `
                        <li id="nlp-position">Pages&nbsp;<span class="page-icon"><i class="fa-solid fa-chevron-down"></i></span>
                          <div class="n-pages-box">
                            <ul>
-                             <li><div class="np-l-div"><a href="./pages/agentsPage.html">Agents</a></div></li>
-                             <li><div class="np-l-div"><a href="./pages/servicesPage.html">Services</a></div></li>
-                             <li><div class="np-l-div"><a href="./pages/realtorPage.html">Realtor</a></div></li>
+                             <li><div class="np-l-div"><a href="../pages/agentsPage.html">Agents</a></div></li>
+                             <li><div class="np-l-div"><a href="../pages/servicesPage.html">Services</a></div></li>
+                             <li><div class="np-l-div"><a href="../pages/realtorPage.html">Realtor</a></div></li>
                              <li><div class="np-l-div"><a href="#">Contact</a></div></li>
                              <li><div class="np-l-div"><a href="#">Licenses</a></div></li>
                              <li><div class="np-l-div"><a href="#">404 Page</a></div></li>
