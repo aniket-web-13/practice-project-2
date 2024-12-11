@@ -90,7 +90,7 @@ footer.innerHTML = `
                           </div>
                       </div>
                       <div class="foot-top-right">
-                          <img src="../assets/png/foot-home.png" alt="">
+                          <img src="./assets/png/foot-home.png" alt="">
                       </div>
                   </div>
                   <div class="foot-bottom">

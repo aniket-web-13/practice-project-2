@@ -1,51 +1,51 @@
 let agent = [
   {
-    src: "../assets/jpg/Denya-contadora.jpg",
+    src: "./assets/jpg/Denya-contadora.jpg",
     agentName: "Denya Contadora",
     agentPost: "Real estate investment specialist",
   },
   {
-    src: "../assets/jpg/Encarna-homie.jpg",
+    src: "./assets/jpg/Encarna-homie.jpg",
     agentName: "Encarna Homie",
     agentPost: "Commercial property agent",
   },
   {
-    src: "../assets/jpg/Agustín-trabajo.jpg",
+    src: "./assets/jpg/Agustín-trabajo.jpg",
     agentName: "Agustín trabajo",
     agentPost: "Lead property advisor",
   },
   {
-    src: "../assets/jpg/fardin-Sayyad.jpg",
+    src: "./assets/jpg/fardin-Sayyad.jpg",
     agentName: "Fardin Sayyad",
     agentPost: "Luxury property expert",
   },
   {
-    src: "../assets/jpg/Alday-banamex.jpg",
+    src: "./assets/jpg/Alday-banamex.jpg",
     agentName: "Alday Banamex",
     agentPost: "Residential sales consultant",
   },
   {
-    src: "../assets/jpg/Valerie-ahorro.jpg",
+    src: "./assets/jpg/Valerie-ahorro.jpg",
     agentName: "Valerie Ahorro",
     agentPost: "Listing agent",
   },
   {
-    src: "../assets/jpg/Cristela-estilista.jpg",
+    src: "./assets/jpg/Cristela-estilista.jpg",
     agentName: "Cristela Estilista",
     agentPost: "Luxury property expert",
   },
   {
-    src: "../assets/jpg/Maestra-yazmin.jpg",
+    src: "./assets/jpg/Maestra-yazmin.jpg",
     agentName: "Maestra Yazmin",
     agentPost: "Investment property consultant",
   },
   {
-    src: "../assets/jpg/Uziel-renta.jpg",
+    src: "./assets/jpg/Uziel-renta.jpg",
     agentName: "Uziel Renta",
     agentPost: "Senior real estate consultant",
   },
   {
-    src: "../assets/jpg/Bryce-jones.jpg.jpg",
+    src: "./assets/jpg/Bryce-jones.jpg.jpg",
     agentName: "Bryce Jones",
     agentPost: "Client relations manager",
   },

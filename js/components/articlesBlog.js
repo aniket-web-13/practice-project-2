@@ -78,13 +78,13 @@ blogAndArticle.innerHTML = `
 
 let articles = [
   {
-    src: "../assets/jpg/blog-1.jpg",
+    src: "./assets/jpg/blog-1.jpg",
   },
   {
-    src: "../assets/jpg/blog-2.jpg",
+    src: "./assets/jpg/blog-2.jpg",
   },
   {
-    src: "../assets/jpg/blog-3.jpg",
+    src: "./assets/jpg/blog-3.jpg",
   },
 ];
 

@@ -125,21 +125,21 @@ testimonialSec.innerHTML = `
 
 let testimonial = [
   {
-    src: "../assets/jpg/David-martinez.jpg",
+    src: "./assets/jpg/David-martinez.jpg",
     heading: "Their attention to detail market expertise made all the difference.",
     para: "Their dedication and commitment to finding the right property were evident throughout. I highly recommend their services to anyone looking to buy or sell. I’m thrilled with my new investment this new property!",
     ownerName: "David Martinez",
     add: "San Jose, South Dakota",
   },
   {
-    src: "../assets/jpg/James-thompson.jpg",
+    src: "./assets/jpg/James-thompson.jpg",
     heading: "An exceptional experience from start to finish!",
     para: "From the first meeting to the closing, knowledgeable, and always available to answer our questions. I couldn’t be happier with my new home! They listened to what I was looking for and showed me properties needs perfectly.",
     ownerName: "James Thompson",
     add: "Dallas, Texas",
   },
   {
-    src: "../assets/jpg/Olivia-carter.jpg",
+    src: "./assets/jpg/Olivia-carter.jpg",
     heading: "Exceptional service and outstanding results.",
     para: "The team’s my expectations. buy or sell. I’m thrilled with my highly recommend their I couldn’t be more pleased with the outcome. I never felt rushed or pressured, and they were always willing to go the extra mile to find properties that matched my vision",
     ownerName: "Olivia Carter",
